@@ -8,8 +8,18 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
 </head>
-<body>
+<body class="bg-[#262A30] h-screen flex items-center justify-center">
     
+    <div class="container w-[400px] py-[25px] px-[35px] absolute bg-white rounded-lg">
+        <p class="text-lg font-medium tracking-wider mb-4">Enter your text or URL</p>
+        <input type="text" placeholder="Text or URL" class="w-full rounded-lg mb-7" id="qrText">
+
+        <div id="imgBox" class="w-[200px] rounded-lg max-h-0 overflow-hidden transition-all">
+            <img class="w-[100%] p-3" src="" id="qrImage">
+        </div>
+
+        <button class="bg-[#4C59F6] w-full h-12 rounded-md text-white" id="btn">Generator QR <Code></Code></button>
+    </div>
 
     <script src="script.js"></script>
 </body>
